@@ -1,0 +1,89 @@
+$body-font-family: 400 12px/1.75 "Open Sans", sans-serif;
+$text-color: #777777;
+$primary-color: #e25050;
+$intro-color: #fefefe;
+$small: 639px;
+$medium: 1023px;
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "fonts";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:400,700|Raleway:800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: $body-font-family;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: $intro-color;
+  font-size: 30px;
+  font-weight: 700;
+
+  @media screen and (max-width: $small) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #202020;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+.ba-section {
+  padding: 60px 0;
+}
+
+.ba-section-title {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ba-section-content {
+  text-align: center;
+}
+
+@import "header";
+@import "section-intro";
+@import "section-features";
+@import "section-our-team";
+@import "section-gallery";
+@import "section-pricing";

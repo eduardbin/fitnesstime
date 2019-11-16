@@ -1,0 +1,73 @@
+.ba-section--pricing {
+  background-color: #e25050;
+
+  .ba-section-title {
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 70px;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.ba-pricing {
+  padding: 27px 17px 27px 30px;
+  background-color: #d14343;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #d14343;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 121px;
+    background-color: #e25050;
+    position: absolute;
+    top: 27px;
+    left: calc(137 / 370 * 100%);
+  }
+}
+
+.ba-pricing__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  svg {
+    fill: #fff;
+  }
+
+  h3 {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+
+.ba-total {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+
+  span {
+    display: inline-block;
+    font-size: 14px;
+    transform: translateY(-17px);
+  }
+}
+
+.ba-pricing__plan {
+  list-style-image: url(../img/galochka.svg);
+}

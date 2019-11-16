@@ -1,0 +1,35 @@
+.ba-section--gallery {
+  .ba-section-title {
+    color: #202020;
+    margin-bottom: 31px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .ba-section-content {
+    max-width: 525px;
+    margin: 0 auto 61px;
+  }
+
+  .ba-row div:nth-child(-n + 4) {
+    margin-bottom: 24px;
+  }
+
+  .ba-row > [class*="ba-col-"] {
+    max-width: 270px;
+  }
+
+  .ba-row {
+    justify-content: space-around;
+  }
+}

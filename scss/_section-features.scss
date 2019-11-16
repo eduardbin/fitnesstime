@@ -1,0 +1,46 @@
+.ba-section-title--features {
+  color: #202020;
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 30px;
+
+  strong {
+    color: $primary-color;
+  }
+}
+
+.ba-section-content--features {
+  color: #a2a2a2;
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 46px;
+}
+
+.ba-features__header {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.ba-features__icon {
+  fill: $primary-color;
+  margin-right: 15px;
+}
+
+.ba-features__content {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: $medium) {
+  .ba-features:nth-child(-n + 2) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .ba-features:nth-child(n) {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+}

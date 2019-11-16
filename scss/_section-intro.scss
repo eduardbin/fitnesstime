@@ -1,0 +1,68 @@
+.ba-section--intro {
+  background: url(../img/intro-bg.jpg) 50% 80px;
+  background-size: cover;
+  color: $intro-color;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.ba-intro {
+  margin-left: 7px;
+  max-width: 370px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ba-intro__header {
+  background-color: #202020;
+  opacity: 0.9;
+  min-height: 66px;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 0 5px;
+
+  @media screen and (max-width: $small) {
+    min-height: 48px;
+    line-height: 48px;
+  }
+}
+
+.ba-intro__subscribe {
+  max-width: 261px;
+  min-height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #202020;
+  opacity: 0.9;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.ba-button--intro {
+  max-width: 148px;
+  opacity: 0.9;
+  color: $intro-color;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: $medium) {
+  .ba-section--intro {
+    background: url(../img/intro-bg.jpg) 60% 66px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .ba-section--intro {
+    background: url(../img/intro-bg.jpg) 70% 97.2px;
+    background-size: cover;
+  }
+
+  .ba-intro {
+    justify-content: flex-end;
+  }
+}
