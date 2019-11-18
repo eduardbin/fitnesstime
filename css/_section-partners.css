@@ -1,0 +1,15 @@
+.ba-section--partners .ba-section-title {
+  color: #202020; }
+  .ba-section--partners .ba-section-title::after {
+    content: "";
+    width: 45px;
+    height: 1px;
+    background-color: #202020;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+/*# sourceMappingURL=_section-partners.css.map */

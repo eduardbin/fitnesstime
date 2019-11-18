@@ -1,0 +1,165 @@
+.ba-section--contact {
+  background: #202020 url(../img/contact/bg-img.png) 50%;
+  background-size: cover;
+  padding: 58px 0 40px;
+
+  h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.ba-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 93px;
+}
+
+.ba-contact__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  color: #c6c6c6;
+  font-weight: 300;
+
+  p {
+    margin-bottom: 21px;
+  }
+
+  a {
+    padding-left: 20px;
+  }
+}
+
+.ba-tel {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 7px;
+    height: 12px;
+    background-image: url(../img/contact/mobile.png);
+    position: absolute;
+    top: 5px;
+    left: 2px;
+  }
+}
+
+.ba-mailto {
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 12px;
+    height: 9px;
+    background-image: url(../img/contact/mailto.svg);
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
+}
+
+.ba-contact__feedback {
+  max-width: 670px;
+
+  h3 {
+    margin-bottom: 25px;
+  }
+}
+
+.ba-contact__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  input {
+    width: calc(212 / 670 * 100%);
+    margin-bottom: 16px;
+    line-height: 32px;
+  }
+
+  textarea {
+    width: calc(441 / 670 * 100%);
+  }
+}
+
+.ba-submit {
+  width: calc(212 / 670 * 100%);
+  color: #707070;
+  font-weight: 300;
+
+  button {
+    width: 100%;
+    padding-right: 52px;
+    line-height: 36px;
+    position: relative;
+    margin-bottom: 14px;
+
+    &::after {
+      content: "";
+      width: 7px;
+      height: 13px;
+      background-image: url(../img/contact/right-arrow.svg);
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.ba-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #707070;
+  font-weight: 300;
+}
+
+.ba-back {
+  color: $primary-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: lighten($primary-color, 15%);
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .ba-contact__form {
+    textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .ba-submit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .ba-contact {
+    flex-direction: column;
+  }
+
+  .ba-contact__info {
+    margin-bottom: 20px;
+  }
+
+  .ba-contact__form {
+    flex-direction: column;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .ba-footer {
+    flex-direction: column;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

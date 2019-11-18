@@ -4,11 +4,11 @@
   .ba-section-title {
     color: #ffffff;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 71.5px;
 
     &::after {
       content: "";
-      width: 50px;
+      width: 45px;
       height: 1px;
       background-color: #fff;
       position: absolute;
@@ -20,7 +20,7 @@
 }
 
 .ba-pricing {
-  padding: 27px 17px 27px 30px;
+  padding: 21px 17px 23px 28px;
   background-color: #d14343;
   color: #fff;
   display: flex;
@@ -36,6 +36,14 @@
     position: absolute;
     top: 27px;
     left: calc(137 / 370 * 100%);
+  }
+}
+
+.ba-pricing--light {
+  border-color: #fff;
+
+  &:before {
+    background-color: #fff;
   }
 }
 
@@ -70,4 +78,27 @@
 
 .ba-pricing__plan {
   list-style-image: url(../img/galochka.svg);
+}
+
+@media screen and (max-width: $medium) {
+  .ba-pricing {
+    padding: 18px 7px 7px;
+    flex-direction: column;
+
+    &::before {
+      width: 121px;
+      height: 1px;
+      left: 50%;
+      top: 45.5%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .ba-pricing {
+    &::before {
+      top: 49%;
+    }
+  }
 }

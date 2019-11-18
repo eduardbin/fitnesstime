@@ -81,9 +81,16 @@ h3 {
   text-align: center;
 }
 
+.ba-sprite {
+  display: none;
+}
+
 @import "header";
 @import "section-intro";
 @import "section-features";
 @import "section-our-team";
 @import "section-gallery";
 @import "section-pricing";
+@import "section-partners";
+@import "section-partners-footer";
+@import "section-contact";

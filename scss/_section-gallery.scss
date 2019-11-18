@@ -6,7 +6,7 @@
 
     &::after {
       content: "";
-      width: 50px;
+      width: 45px;
       height: 1px;
       background-color: #000;
       position: absolute;
@@ -23,6 +23,18 @@
 
   .ba-row div:nth-child(-n + 4) {
     margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: $medium) {
+    .ba-row div:nth-child(-n + 6) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: $small) {
+    .ba-row div:nth-child(n) {
+      margin-bottom: 10px;
+    }
   }
 
   .ba-row > [class*="ba-col-"] {
